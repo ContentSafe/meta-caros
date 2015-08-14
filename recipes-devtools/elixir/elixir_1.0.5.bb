@@ -4,6 +4,7 @@ DESCRIPTION = "Elixir leverages the Erlang VM, known for running low-latency, di
 LICENSE  = "GPLv2"
 
 PR = "r1"
+ER = "1"
 
 LIC_FILES_CHKSUM = "file://LICENSE;md5=0c48e31d655fb0e9b1f60b931e652f47"
 
