@@ -5,11 +5,9 @@ LICENSE  = "GPLv2"
 
 PR = "r1"
 
-REL_VSN = "1.0.5"
-
 LIC_FILES_CHKSUM = "file://LICENSE;md5=0c48e31d655fb0e9b1f60b931e652f47"
 
-SRC_URI = "https://github.com/elixir-lang/elixir/archive/v${REL_VSN}.tar.gz;downloadfilename=${PN}-${REL_VSN}.tar.gz"
+SRC_URI = "https://github.com/elixir-lang/elixir/archive/v${PV}.tar.gz;downloadfilename=${PN}-${PV}.tar.gz"
 SRC_URI[md5sum] = "abbdda96891b4519a1dc3e65b58f1b0b"
 SRC_URI[sha256sum] = "5ce5c226b3d11d751b41ad79b915b86f13f8a1b89ef3e733321d3f46ff4d81b8"
 
@@ -22,7 +20,7 @@ SRC_URI[hex.sha256sum] = "22403952073cee120894a50fe26babd76d6ce3d7f21d08d34973a8
 DEPENDS = "erlang"
 RDEPENDS_${PN} += "erlang"
 
-S = "${WORKDIR}/${PN}-${REL_VSN}"
+S = "${WORKDIR}/${PN}-${PV}"
 
 do_install() {
    install -d ${D}${bindir}
